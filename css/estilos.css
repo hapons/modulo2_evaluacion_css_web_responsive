@@ -1,0 +1,240 @@
+body{
+  background-color: #02010a;
+  font-family: 'Dancing Script', cursive;
+}
+
+@keyframes header-animacion {
+	0% {
+		position: relative;
+    margin-top: 150%;
+	}
+	60% {
+    position: relative;
+		margin-top: -5%;
+	}
+	100% {
+		position: relative;
+		margin-top: 0%;
+	}
+}
+
+header{
+  display:flex;
+	flex-direction:row;
+  border-radius: 10px 10px 0 0;
+  background-color: #5b7989;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #02010a;
+  animation-name: header-animacion;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;  
+}
+
+#contenido{
+  color: #02010a;
+  text-decoration: underline;
+  font-weight: bold;
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+
+}
+
+footer{
+  -webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+@media (min-width: 900px) {
+
+  header > div{
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  header div > h2{
+    text-align: left;
+  }
+
+  header div > nav{
+    text-align: right;
+    font-size: 20px;
+  }
+
+
+	#contenido{
+    text-align: center;
+	}
+  #imagen-secundaria{
+    display: flex;
+    flex-direction: row;
+  }
+  body{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .c1, .c2, .c3, .c4  {
+  	width: 25%;
+  }
+  .c3 {
+    text-align: left;
+  }
+  .grupo{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+  	padding: 10px;
+  	width: 100%;
+  }
+
+}
+
+@media (max-width: 899px) {
+
+  header{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header div > h2{
+    text-align: center;
+    width: 100%;
+  }
+
+  header div > nav{
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+  }
+
+
+	#contenido{
+		width: 100%;
+	}
+  footer .c1{
+    width: 100%;
+    padding-left: 30px;
+  }
+  footer .c2{
+    width: 100%;
+    padding-left: 30px;
+  }
+  footer .c3{
+    width: 100%;
+    padding-left: 30px;
+  }
+  footer .c4{
+  	width: 100%;
+    padding-left: 30px;
+  }
+}
+
+
+
+
+header div nav li{
+  display: inline;
+}
+
+a:link{
+  color: #ffffff;
+}
+
+a:visited{
+  color: #ffffff;
+}
+
+#imagen-central {
+  display: flex;
+	flex-direction: column;
+  background-color: #82c3a6;
+  text-align: center;
+}
+
+#imagen-secundaria {
+  background-color: #d5c75f;
+  border: 1px;
+  text-align: center;
+}
+
+figure > img{
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px #02010a;
+  padding: 0px;
+  width: 100%;
+}
+
+.grupo{
+  background-color: #d5c75f;
+}
+
+.grupo > div{
+  padding: 20px;
+  border: 0px;
+}
+
+.grupo div img{
+  text-align: center;
+  width: 100%;
+}
+
+#imagen_campo img:hover{
+  -webkit-transform:rotate(10deg);
+  -moz-transform:rotate(10deg);
+  -o-transform:rotate(10deg);
+  transition-duration: 0.5s;
+  box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+
+#retrato_mujer img:hover{
+  -ms-transform: translate(20px, -5px); /* IE 9 */
+  -webkit-transform: translate(20px, -5px); /* Safari prior 9.0 */
+  transform: translate(20px, -5px);
+  transition-duration: 0.5s;
+  box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+
+#imagen1 img{
+  -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+filter: blur(10px);
+}
+
+#imagen2, #imagen4, #imagen6 > img{
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+
+#imagen3 img{
+  -webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+filter: sepia(90%);
+}
+
+
+
+#imagen2 img{
+animation-name: imagen2-animacion;
+animation-duration: 2s;
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+-o-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+footer{
+  display:flex;
+	flex-direction: row;
+  color: #02010a;
+  background-color: #c6d5c5;
+  font-weight: bold;
+  border-radius: 0 0 10px 10px;
+  text-align: left;
+  padding-left: 20px;
+}
